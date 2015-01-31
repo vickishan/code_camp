@@ -1,0 +1,22 @@
+Link in description:
+ ☐ Add a link in the description box that goes to the truck's display page
+
+Display by Day of Week:
+ ☐ Have users change the display by day of week using a drop down
+
+Display by keyword search:
+ ☐ Display businesses that sell burritos/burgers/smoothies/etc. using an input field
+
+Integrate with Yelp API:
+ ☐ Show the yelp rating in the description box
+ ☐ https://github.com/Yelp/yelp-ruby
+ ☐ To get API access tokens: http://www.yelp.com/developers
+
+Overall Hints:
+  ☐ Finding, searching, filtering
+    ☐ http://guides.rubyonrails.org/active_record_querying.html
+  ☐ Dynamically updating the map markers
+    ☐ http://api.jquery.com/jquery.getjson/
+    ☐ https://hpneo.github.io/gmaps/documentation.html
+
+
