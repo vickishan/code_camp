@@ -1,0 +1,20 @@
+<!-- app/views/trucks/show.html.erb -->
+<!-- localhost:3000/trucks/1 -->
+
+<h1><%= @truck.name %></h1>
+<p><%= @truck.description  %></p>
+
+<table>
+  <tr>
+    <th>Day of Week</th>
+    <th>Times</th>
+    <th>Location</th>
+  </tr>
+  <% @truck.locations.each do |l| %>
+    <tr>
+      <td><%= weekday(l.day_of_week) %></td>
+      <td><%= pretty_time(l.start_hour) %> - <%= pretty_time(l.end_hour) %></td>
+      <td><%= number_with_precision(l.lat, precision: 3) %>° - <%= number_with_precision(l.long, precision: 3) %>°</td>
+    </tr>
+  <% end %>
+</table>

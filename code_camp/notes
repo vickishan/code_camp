@@ -1,0 +1,72 @@
+git clone https://github.com/vickishan/code_camp.git
+
+
+Ruby on Rails
+Web framework
+MVC
+
+Model - User (mysql, sqlite, ...)
+Controller - handles requests, sets data on the model and in the view
+View - display (this is what the user sees)
+
+Request -> Router -> Controller -> (load/update) model -> view
+
+Truck Truck App
+- homepage
+  - what trucks are open today
+  - where those trucks are
+
+- belongs to
+- has many
+- has one
+...
+
+Truck           -<     Location
+name:string            lat:float
+description:string     long:float
+
+Truck resource
+RESTful API
+HTTP
+*index   GET /trucks # all the trucks
+*show    GET /trucks/:id # info for 1 truck
+create  POST /trucks # create a new one
+*update  PATCH /trucks/:id # update an existing truck
+destroy DELETE /trucks/:id # delete a truck
+
+*edit
+new
+
+                       start_hour:int
+                       end_hour:int
+Ruby
+"string" :symbols
+:name
+
+name
+@name
+
+
+
+move data.csv -> root of your application (code_camp/)
+move load_trucks.rake -> lib/tasks/
+
+- add html to app
+app/views/trucks/index.html.erb
+
+- add js to application.html.erb
+app/views/layouts/application.html.erb
+
+- add
+//= require underscore
+//= require gmaps/google
+
+to
+app/assets/javascripts/application.js
+
+
+
+vicki@squareup.com
+
+
+

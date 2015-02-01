@@ -1,0 +1,14 @@
+git clone https://github.com/vickishan/code_camp.git
+
+
+Ruby on Rails
+Web framework
+MVC
+
+Model - User (mysql, sqlite, ...)
+Controller - handles requests, sets data on the model and in the view
+View - display (this is what the user sees)
+
+Request -> Router -> Controller -> (load/update) model -> view
+
+
